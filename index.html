@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIRA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/LogoSIRA.png">
+</head>
+
+<body>
+    <!-- debut du header -->
+    <header>
+        <div class="Bloc1">
+            <div class="LOGO">
+                <a href="index.html"><img src="./images/LogoSIRA.png" alt="SIRA" class="logo"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Offres</a></li>
+                    <li><a href="#">Tableau locataire</a></li>
+                    <li><a href="#">Tableau proprietaire</a></li>
+                </ul>
+            </nav>
+            <a href="#" id="connexion">Connexion</a>
+        </div>
+    </header>
+    <!-- fin du header  -->
+    <!-- debut du hero -->
+    <div id="hero1">
+        <h1>La confiance est le meilleures contra <br>
+            <p>Recherchez un logement</p>
+        </h1>
+        <!-- form= bar de recherche -->
+        <form class="bar-recherche">
+            <div>
+                <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8" />
+                    <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                </svg>
+            </div>
+            <!-- La mini bd pour les comunes de la ci  -->
+            <input type="text" placeholder="Commune" list="communes">
+            <datalist id="communes">
+                <option value="Abobo">Abobo</option>
+                <option value="Adjamé">Adjamé</option>
+                <option value="Attécoubé">Attécoubé</option>
+                <option value="Cocody">Cocody</option>
+                <option value="Koumassi">Koumassi</option>
+                <option value="Marcory">Marcory</option>
+                <option value="Plateau">Plateau</option>
+                <option value="Port-Bouët">Port-Bouët</option>
+                <option value="Treichville">Treichville</option>
+                <option value="Yopougon">Yopougon</option>
+                <option value="Bingerville">Bingerville</option>
+                <option value="Songon">Songon</option>
+                <!-- BAS-SASSANDRA -->
+                <option value="San-Pédro">San-Pédro</option>
+                <option value="Sassandra">Sassandra</option>
+                <option value="Soubré">Soubré</option>
+                <option value="Tabou">Tabou</option>
+                <option value="Buyo">Buyo</option>
+                <option value="Fresco">Fresco</option>
+                <option value="Gueyo">Gueyo</option>
+                <option value="Méagui">Méagui</option>
+                <!-- COMOÉ -->
+                <option value="Aboisso">Aboisso</option>
+                <option value="Adiaké">Adiaké</option>
+                <option value="Grand-Bassam">Grand-Bassam</option>
+                <option value="Mafère">Mafère</option>
+                <option value="Noé">Noé</option>
+                <option value="Tiapoum">Tiapoum</option>
+                <!-- GÔH-DJIBOUA -->
+                <option value="Divo">Divo</option>
+                <option value="Lakota">Lakota</option>
+                <option value="Guitry">Guitry</option>
+                <option value="Hiré">Hiré</option>
+                <!-- LACS -->
+                <option value="Bongouanou">Bongouanou</option>
+                <option value="Dimbokro">Dimbokro</option>
+                <option value="M'Batto">M'Batto</option>
+                <option value="Tiébissou">Tiébissou</option>
+                <option value="Toumodi">Toumodi</option>
+                <option value="Daoukro">Daoukro</option>
+                <!-- LAGUNES -->
+                <option value="Agboville">Agboville</option>
+                <option value="Adzopé">Adzopé</option>
+                <option value="Akoupé">Akoupé</option>
+                <option value="Alépé">Alépé</option>
+                <option value="Grand-Lahou">Grand-Lahou</option>
+                <option value="Jacqueville">Jacqueville</option>
+                <option value="Sikensi">Sikensi</option>
+                <option value="Tiassalé">Tiassalé</option>
+                <!-- MONTAGNES -->
+                <option value="Man">Man</option>
+                <option value="Bangolo">Bangolo</option>
+                <option value="Biankouma">Biankouma</option>
+                <option value="Danané">Danané</option>
+                <option value="Facobly">Facobly</option>
+                <option value="Guiglo">Guiglo</option>
+                <option value="Kouibly">Kouibly</option>
+                <option value="Sipilou">Sipilou</option>
+                <option value="Toulépleu">Toulépleu</option>
+                <option value="Zouan-Hounien">Zouan-Hounien</option>
+                <option value="Blolequin">Blolequin</option>
+                <!-- SASSANDRA-MARAHOUÉ -->
+                <option value="Daloa">Daloa</option>
+                <option value="Issia">Issia</option>
+                <option value="Vavoua">Vavoua</option>
+                <option value="Bouaflé">Bouaflé</option>
+                <option value="Sinfra">Sinfra</option>
+                <option value="Zoukougbeu">Zoukougbeu</option>
+                <!-- SAVANES -->
+                <option value="Korhogo">Korhogo</option>
+                <option value="Boundiali">Boundiali</option>
+                <option value="Ferkessédougou">Ferkessédougou</option>
+                <option value="Kong">Kong</option>
+                <option value="M'Bengué">M'Bengué</option>
+                <option value="Sinématiali">Sinématiali</option>
+                <option value="Tengrela">Tengrela</option>
+                <!-- VALLÉE DU BANDAMA -->
+                <option value="Bouaké">Bouaké</option>
+                <option value="Béoumi">Béoumi</option>
+                <option value="Botro">Botro</option>
+                <option value="Katiola">Katiola</option>
+                <option value="Sakassou">Sakassou</option>
+                <option value="Dabakala">Dabakala</option>
+                <!-- WOROBA -->
+                <option value="Séguéla">Séguéla</option>
+                <option value="Mankono">Mankono</option>
+                <option value="Kani">Kani</option>
+                <option value="Kounahiri">Kounahiri</option>
+                <option value="Worofla">Worofla</option>
+                <!-- YAMOUSSOUKRO -->
+                <option value="Yamoussoukro">Yamoussoukro</option>
+                <option value="Attiégouakro">Attiégouakro</option>
+                <!-- ZANZAN -->
+                <option value="Bondoukou">Bondoukou</option>
+                <option value="Bouna">Bouna</option>
+                <option value="Nassian">Nassian</option>
+                <option value="Tanda">Tanda</option>
+                <option value="Transua">Transua</option>
+        </datalist>
+            <!-- la bar horizentale -->
+            <hr>
+            <!-- LA 2 EM PARtie de la bar de recherche -->
+            <input type="text" placeholder="Bien" list="biens">
+            <datalist id="biens">
+                            <!-- RÉSIDENTIEL -->
+                <option value="villa">Villa</option>
+                <option value="villa-duplex">Villa Duplex</option>
+                <option value="villa-standing">Villa Standing</option>
+                <option value="maison">Maison</option>
+                <option value="maison-basse">Maison Basse</option>
+                <option value="appartement">Appartement</option>
+                <option value="appartement-meuble">Appartement Meublé</option>
+                <option value="studio">Studio</option>
+                <option value="chambre-salon">Chambre Salon</option>
+                <option value="chambre-simple">Chambre Simple</option>
+                <option value="duplex">Duplex</option>
+                <option value="triplex">Triplex</option>
+                <option value="penthouse">Penthouse</option>
+                <option value="residence">Résidence</option>
+                <option value="cour-commune">Cour Commune</option>
+                <!-- COMMERCIAL -->
+                <option value="magasin">Magasin</option>
+                <option value="boutique">Boutique</option>
+                <option value="local-commercial">Local Commercial</option>
+                <option value="bureau">Bureau</option>
+                <option value="immeuble-bureau">Immeuble de Bureaux</option>
+                <option value="centre-commercial">Centre Commercial</option>
+                <option value="showroom">Showroom</option>
+                <option value="entrepot">Entrepôt</option>
+                <option value="hangar">Hangar</option>
+                <option value="usine">Usine</option>
+                <option value="atelier">Atelier</option>
+                <!-- TERRAIN -->
+                <option value="terrain-residentiel">Terrain Résidentiel</option>
+                <option value="terrain-commercial">Terrain Commercial</option>
+                <option value="terrain-industriel">Terrain Industriel</option>
+                <option value="terrain-agricole">Terrain Agricole</option>
+                <option value="terrain-nu">Terrain Nu</option>
+                <option value="terrain-viabilise">Terrain Viabilisé</option>
+                <option value="lot-parcelle">Lot / Parcelle</option>
+                <!-- HÔTELLERIE & TOURISME -->
+                <option value="hotel">Hôtel</option>
+                <option value="motel">Motel</option>
+                <option value="auberge">Auberge</option>
+                <option value="residence-hoteliere">Résidence Hôtelière</option>
+                <option value="maison-hotes">Maison d'Hôtes</option>
+                <!-- MIXTE & AUTRES -->
+                <option value="immeuble-rapport">Immeuble de Rapport</option>
+                <option value="immeuble-mixte">Immeuble Mixte</option>
+                <option value="complexe-immobilier">Complexe Immobilier</option>
+                <option value="ferme">Ferme</option>
+                <option value="plantation">Plantation</option>
+                <option value="garage">Garage / Parking</option>
+                <option value="station-service">Station Service</option>
+        </datalist>
+            <hr>
+            <!-- partie du budget -->
+            <!-- SOLUTION : input + select dans un même div -->
+            <input type="number" id="budget" name="budget" min="0" placeholder="Budget" />
+            <select name="devise" id="devise">
+                <option value="" disabled selected>FCFA</option>
+            </select>
+            <!-- partie du bouton  -->
+            <button type="submit" id="recherche">Rechercher</button>
+        </form>
+    </div>
+    <!-- fin du hero debu du main  -->
+    <main>
+        <section id="sect1">
+
+            <h2>Pourquoi choisir <span>SIRA</span>&nbsp;?</h2>
+            <p>Une plateforme pensée pour la réalité ivoirienne, alliant sécurité blockchain et simplicité de navigation .</p>
+
+            <div class="Bloc1">
+
+                <div class="blc">
+                    <span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            <polyline points="9 12 11 14 15 10"/>
+        </svg>
+    </span>
+                    <h3>Passeport de Confiance</h3>
+                    <p>Un historique de paiement infalsifiable sur la Blockchain qui construit votre réputation financière et facilite vos futurs accès au crédit.</p>
+                </div>
+                <div class="blc">
+                    <span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M12 6v2m0 8v2M9.5 9.5A2.5 2.5 0 0 1 12 8a2.5 2.5 0 0 1 0 5 2.5 2.5 0 0 0 0 5 2.5 2.5 0 0 0 2.5-1.5"/>
+        </svg>
+    </span>
+                    <h3>Paiements sécurisés</h3>
+                    <p>Payez votre loyer en toute sécurité avec Orange Money, MTN MoMo, Wave ou par carte bancaire. Finis les déplacements inutiles.</p>
+                </div>
+                <div class="blc">
+                    <span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                            <polyline points="22 4 12 14.01 9 11.01"/>
+                        </svg>
+                    </span>
+                    <h3>Biens certifiés</h3>
+                    <p>Tous les biens sont vérifiés (document, propriétaire et conformité à la loi 12+2) pour vous garantir une transaction sans risque.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
