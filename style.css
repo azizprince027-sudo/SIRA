@@ -2200,3 +2200,209 @@ td .iconns::before {
 
 
 /* fin de la section 5 debut du footer */
+
+footer {
+    background: #0f172a;
+    display: flex;
+    flex-direction: column;
+}
+
+footer>div {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 5rem 8rem;
+    gap: 4rem;
+}
+
+
+/* COL-LOGO */
+
+.col-logo {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    max-width: 26rem;
+}
+
+.col-logo p {
+    font-size: 1.4rem;
+    color: #94a3b8;
+    line-height: 1.8;
+}
+
+
+/* COL-LIENS */
+
+.col-liens {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.4rem;
+}
+
+.col-liens h3 {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+.col-liens a {
+    font-size: 1.7rem;
+    font-style: italic;
+    font-weight: 600;
+    color: #22d3ee;
+    text-decoration: none;
+    transition: color 0.2s, letter-spacing 0.2s;
+}
+
+.col-liens a:hover {
+    color: #67e8f9;
+    letter-spacing: 0.04rem;
+}
+
+
+/* COL-SOCIAL */
+
+.col-social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.col-social h3 {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+
+/* ICONE-SOCIAL */
+
+.icone-social {
+    width: 6rem;
+    height: 6rem;
+    background: #ffffff;
+    border-radius: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.icone-social:hover {
+    background: #e2e8f0;
+    transform: translateY(-0.3rem);
+}
+
+.icone-social svg {
+    width: 3rem;
+    height: 3rem;
+    color: #0f172a;
+}
+
+
+/* COPY */
+
+.copy {
+    border-top: 0.1rem solid #1e293b;
+    padding: 2.4rem 8rem;
+    text-align: center;
+}
+
+.copy p {
+    font-size: 1.6rem;
+    font-style: italic;
+    font-weight: 500;
+    color: #94a3b8;
+}
+
+
+/* TABLETTE */
+
+@media (max-width: 1024px) {
+    footer>div {
+        padding: 4rem;
+        gap: 3rem;
+    }
+    .copy {
+        padding: 2rem 4rem;
+    }
+    .icone-social {
+        width: 5.2rem;
+        height: 5.2rem;
+    }
+    .icone-social svg {
+        width: 2.6rem;
+        height: 2.6rem;
+    }
+}
+
+
+/* MOBILE */
+
+@media (max-width: 640px) {
+    footer>div {
+        flex-direction: column;
+        align-items: center;
+        padding: 4rem 2.4rem;
+        gap: 3.6rem;
+        text-align: center;
+    }
+    .col-logo {
+        align-items: center;
+        max-width: 100%;
+    }
+    .col-logo p {
+        text-align: center;
+    }
+    .copy {
+        padding: 2rem 2.4rem;
+    }
+    .copy p {
+        font-size: 1.4rem;
+    }
+}
+
+
+/* TV */
+
+@media (min-width: 1920px) {
+    footer>div {
+        padding: 7rem 16rem;
+        gap: 8rem;
+    }
+    .col-logo {
+        max-width: 38rem;
+    }
+    .col-logo p {
+        font-size: 1.8rem;
+    }
+    .col-liens h3,
+    .col-social h3 {
+        font-size: 2.8rem;
+    }
+    .col-liens a {
+        font-size: 2.2rem;
+    }
+    .icone-social {
+        width: 8rem;
+        height: 8rem;
+        border-radius: 1.8rem;
+    }
+    .icone-social svg {
+        width: 4rem;
+        height: 4rem;
+    }
+    .copy {
+        padding: 3rem 16rem;
+    }
+    .copy p {
+        font-size: 2rem;
+    }
+}
+
+
+/* fin de la page d aceuille  */
